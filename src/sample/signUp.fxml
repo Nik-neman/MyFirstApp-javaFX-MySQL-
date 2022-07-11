@@ -27,12 +27,12 @@
                         <Font size="17.0" />
                     </font>
                 </PasswordField>
-            <TextField fx:id="login_field1" layoutX="34.0" layoutY="15.0" prefHeight="25.0" prefWidth="307.0" promptText="Name">
+            <TextField fx:id="signUpName" layoutX="34.0" layoutY="15.0" prefHeight="25.0" prefWidth="307.0" promptText="Name">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <TextField fx:id="login_field2" layoutX="380.0" layoutY="15.0" prefHeight="25.0" prefWidth="307.0" promptText="Lastname">
+            <TextField fx:id="signUpLastName" layoutX="380.0" layoutY="15.0" prefHeight="25.0" prefWidth="307.0" promptText="LastName">
                <font>
                   <Font size="17.0" />
                </font>

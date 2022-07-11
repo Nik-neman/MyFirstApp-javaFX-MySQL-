@@ -20,10 +20,10 @@ public class SignUpController {
     private TextField login_field;
 
     @FXML
-    private TextField login_field1;
+    private TextField signUpName;
 
     @FXML
-    private TextField login_field2;
+    private TextField signUpLastName;
 
     @FXML
     private PasswordField password_field;
@@ -42,6 +42,12 @@ public class SignUpController {
 
     @FXML
     void initialize() {
+        DatabaseHandler dbHandler = new DatabaseHandler();
+        signUpButton.setOnAction(event -> {
+            dbHandler.signUpUser(signUpName.getText(), signUpLastName.getText(),
+                    login_field.getText(), password_field.getText(), signUpCountry.getText(), "Male");
+
+        });
 
     }
 
