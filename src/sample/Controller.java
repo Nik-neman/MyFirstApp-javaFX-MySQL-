@@ -66,6 +66,8 @@ public class Controller {
     }
 
     private void loginUser(String loginText, String loginPassword) {
+        DatabaseHandler dbHandler;
+        User user
 
     }
 

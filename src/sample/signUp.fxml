@@ -39,7 +39,7 @@
             </TextField>
             <CheckBox fx:id="signUpCheckBoxMale" layoutX="266.0" layoutY="155.0" mnemonicParsing="false" selected="true" text="Men" />
             <CheckBox fx:id="signUpCheckBoxFemale" layoutX="380.0" layoutY="155.0" mnemonicParsing="false" text="Woman" />
-            <TextField fx:id="signUpCountry" layoutX="188.0" layoutY="181.0" prefHeight="25.0" prefWidth="307.0" promptText="Cantry">
+            <TextField fx:id="signUpCountry" layoutX="188.0" layoutY="181.0" prefHeight="25.0" prefWidth="307.0" promptText="Contry">
                <font>
                   <Font size="17.0" />
                </font>
