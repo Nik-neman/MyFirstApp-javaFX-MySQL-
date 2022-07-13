@@ -2,6 +2,8 @@ package sample;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -66,8 +68,26 @@ public class Controller {
     }
 
     private void loginUser(String loginText, String loginPassword) {
-        DatabaseHandler dbHandler;
-        User user
+        DatabaseHandler dbHandler = new DatabaseHandler();
+        User user = new User();
+        user.setUsername(loginText);
+        user.setPassword(loginPassword);
+        ResultSet result = dbHandler.getUser(user);
+
+        int counter = 0;
+         while (true){
+             try {
+                 if (!result.next()) break;
+             } catch (SQLException throwables) {
+                 throwables.printStackTrace();
+             }
+             counter++;
+         }
+
+         if(counter >= 1){
+             System.out.println("Success");
+         }
+
 
     }
 

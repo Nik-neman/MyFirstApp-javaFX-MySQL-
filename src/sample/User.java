@@ -17,6 +17,10 @@ public class User {
         this.gender = gender;
     }
 
+    public User() {
+
+    }
+
     public String getFirstname() {
         return firstname;
     }
